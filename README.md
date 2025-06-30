@@ -21,6 +21,52 @@ This web application allows you to translate text from one language to another u
 - User-friendly interface with Material-UI components for easy navigation and interaction.
 
 ## Setup
+🔹 How Users Can Use the Web App:
+Create Azure Account
+
+Go to https://azure.microsoft.com/free
+
+Sign up for a free account.
+
+Create Translator Resource
+
+In Azure Portal, search for “Translator”
+
+Click Create, choose region, pricing tier (F0 for free), and resource group.
+
+After creation, go to the resource → Keys and Endpoint
+
+Copy API Key & Region
+
+You’ll get:
+
+Key1 or Key2 (use either)
+
+Region (e.g., centralindia, eastus)
+
+Use in Web App
+
+Paste the key and region into the app (either in UI or .env file depending on setup).
+
+Example in code:
+
+js
+Copy
+Edit
+headers: {
+  'Ocp-Apim-Subscription-Key': '<your-key>',
+  'Ocp-Apim-Subscription-Region': '<your-region>',
+  'Content-Type': 'application/json'
+}
+Start Translating
+
+Enter text
+
+Select input & output languages
+
+Click translate → see results instantly
+
+
 
 To run this project locally, you need to have Node.js and npm (or yarn) installed on your machine.
 
